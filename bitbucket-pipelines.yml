@@ -5,7 +5,7 @@ pipelines:
         - step:
             script:
              - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-             - docker build -t udaysh/php_v7.2:$BITBUCKET_COMMIT .
-             - docker push udaysh/php_v7.2:$BITBUCKET_COMMIT
+             - docker build -t udaysh/python:$BITBUCKET_COMMIT .
+             - docker push udaysh/python:$BITBUCKET_COMMIT
 options:
     docker: true
